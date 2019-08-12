@@ -43,12 +43,20 @@ end
 
 def reduce_to_total(array, starting_point)
   i = 0 
+  if starting_point
  while i < array.length do
     n = starting_point + array[i]
     starting_point = n 
     i += 1 
 end
 starting_point
+else 
+  n = 0 
+  while i < array.length do 
+    n = array[i] + n
+    i += 1 
+  end 
+  n 
 end
 
 def reduce_to_all_true(array)
