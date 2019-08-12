@@ -43,7 +43,7 @@ end
 
 def reduce_to_total(array, starting_point)
   i = 0 
-  if starting_point
+  if starting_point 
  while i < array.length do
     n = starting_point + array[i]
     starting_point = n 
